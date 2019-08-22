@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Peter's Houdini Experiments</title>
+        <style>
+            #starfield {
+                font-size: 20px;
+                color: red;
+                height: 200px;
+                width: 300px;
+                --star-array: [];
+            }
+
+            #starfield.animating {
+                background-image: paint(starfield);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- with the CSS Paint API, you can apply the desired effect to any element (I think) -->
+        <!-- <h1 id="starfield">This is the witch</h1> -->
+        <button id="starfield">A generic button</button>
+
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
